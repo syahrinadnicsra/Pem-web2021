@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data Ortu Calon PDB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;}
+            
+        /* Style the header */
+        .header {
+            text-align: center;
+            margin-bottom:30px;
+            margin-top:30px;
+            margin-left:30px;
+            margin-right:30px;
+            border-bottom:3px solid rgba(35, 100, 241, 0.897);
+            width:800px;
+            margin: auto;
+        }
+
+        /*Style H*/
+        h1 {
+            font-family: 'Gill Sans', sans-serif;
+            color: rgba(255, 21, 165, 0.897);
+            text-shadow: 2px 2px 5px black, 2px 2px 2px black, 2px 2px 25px black, 0 0 5px black;
+        }
+    
+        h2{
+            font-family: Verdana;
+        }
+
+        /*Background Form Pengisian*/
+        .bagian{
+            margin: auto;
+            padding: 0px 30px;
+            width: 700px;
+            height: 700px;
+            background-color: rgba(35, 207, 250, 0.2);  
+            backdrop-filter: blur(50px);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(35, 100, 241, 0.897);
+        }
+
+        /*Judul Formulir*/
+        .bagian h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-transform: uppercase;
+            border-bottom: 3px solid rgba(35, 100, 241, 0.897);
+        }
+        
+        /*Kolom Input*/
+        .bagian form input{
+            border: none;
+            padding: 6px;
+            background-color: transparent;
+            border-bottom: 2px solid rgba(35, 100, 241, 0.897);
+            color: rgb(0, 0, 0);
+            font-family: Times New Roman;
+        }
+        .bagian form textarea{
+            border: 3;
+            border-color: rgba(35, 100, 241, 0.897);
+            border-radius: 5px;
+            background-color: transparent;
+            border-bottom: 2px solid rgba(35, 100, 241, 0.897);
+            color: white;
+        }
+
+        /*Tombol Select*/
+        .bagian form select{
+            width: 100%;
+            padding: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background-color:rgba(255, 21, 165, 0.897);
+            font-size: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        /*Tombol submit*/
+        .bagian form button{
+            width: 100%;
+            padding: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color:rgba(255, 21, 165, 0.897);
+            font-size: 28px;
+            color: white;
+        }
+
+        .bagian form button:hover {
+            background-color: rgba(255, 21, 165, 0.897);
+        }
+
+        footer{
+            background-color: rgba(255, 21, 165, 0.897);
+            color : white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <body background="city.jpg">
+        <div class="header">
+            <h1>FORMULIR PENDAFTARAN</h1>
+            <center><p>
+                <a href = "form1.html">Info Pendaftaran</a>
+                <a href = "form2.html">Data Calon PDB</a>
+                <a href = "form3.html">Data Ortu Calon PDB</a>
+            </p></center>
+        </div>
+        <br>
+        <div class="bagian">
+        <br>
+        <h2>Data Orang Tua :</h2>
+        <form action="proses.php" method="POST">
+            <tr><td>No.KK</td><td>:<input type="text" name="no_kk" size="55"></td></tr><br>
+            <tr><td>Nama Ayah Kandung</td><td>:<input type="text" name="nm_ayahkdg" size="55"></td></tr><br>
+            <tr><td>Agama</td><td>:<input type="text" name="agama_ayh" size="55"></td></tr><br>
+            <tr><td>Pekerjaan</td><td>:<input type="text" name="pekerjaan_ayh" size="55"></td></tr><br>
+                <tr><td>Nama Ibu Kandung</td><td>:<input type="text" name="nm_ibukdg" size="55"></td></tr><br>
+                <tr><td>Agama</td><td>:<input type="text" name="agama_ibu" size="55"></td></tr><br>
+                <tr><td>Perkerjaan</td><td>:<input type="text" name="pekerjaan_ibu" size="55"></td></tr><br>
+                <tr><td>Alamat Orang Tua</td><td>:<br><select name="alamat_ortu">
+                    <option selected="select">Pilih Provinsi</option>
+                    <option value="aceh">Aceh</option>
+                    <option value="sumut">Sumatra Utara</option>
+                    <option value="sumbar">Sumatra Barat</option>
+                    <option value="riau">Riau</option>
+                    <option value="k_riau">Kep.Riau</option>
+                    <option value="jambi">Jambi</option>
+                    <option value="bengkulu">Bengkulu</option>
+                    <option value="sumsel">Sumatra Selatan</option>
+                    <option value="k_bangkabelitung">Kep.Bangka Belitung</option>
+                    <option value="lampung">Lampung</option>
+                    <option value="dkijkt">DKI Jakarta</option>
+                    <option value="banten">Banten</option>
+                    <option value="jabar">Jawa Barat</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="diy">DI Yogyakarta</option>
+                    <option value="jatim">Jawa Timur</option>
+                    <option value="bali">Bali</option>
+                    <option value="ntb">Nusa Tenggara Barat</option>
+                    <option value="ntt">Nusa Tenggara Timur</option>
+                    <option value="kalbar">Kalimantan Barat</option>
+                    <option value="kalteng">Kalimantan Tengah</option>
+                    <option value="kalsel">Kalimantan Selatan</option>
+                    <option value="kaltim">Kalimantan Timur</option>
+                    <option value="kalut">Kalimantan Utara</option>
+                    <option value="sulut">Sulawesi Utara</option>
+                    <option value="gorontalo">Gorontalo</option>
+                    <option value="sulteng">Sulawesi Tengah</option>
+                    <option value="sulbar">Sulawesi Barat</option>
+                    <option value="sulsel">Sulawesi Selatan</option>
+                    <option value="sultengg">Sulawesi Tenggara</option>
+                    <option value="maluku_ut">Maluku Utara</option>
+                    <option value="maluku">Maluku</option>
+                    <option value="papua_brt">Papua Barat</option>
+                    <option value="papua">papua</option>
+                </select></td></tr><br><br>
+                <tr><td>Masukkan Alamat Lengkap</td><td>:<input type="text" name="almt_lengkap" size="55"></td></tr><br><br>
+                    <button type="submit" name="submit" value="submit"><font face="Times New Roman">Submit</font></button><br><br>
+                    <button type="reset" name="reset" value="reset"><font face="Times New Roman">Reset</font></button><br><br>
+        </form>
+        </div>
+        <br>
+        <br>
+        <footer>
+            &copy; Syahrina Dini Caesara💖
+        </footer><br><br>
+    </body>
+</html>
