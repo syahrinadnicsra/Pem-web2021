@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Layout.html</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://badoystudio.com/cloudme.fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+background-position: center;
+background-size: cover;
+background-image: url("background (1).jpeg");
+min-height: 75%;
+}
+
+.galeri {
+display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-padding w3-black">
+<div class="w3-col s3">
+<a href="Layout.html" class="w3-button w3-block w3-black">HOME</a>
+</div>
+<div class="w3-col s3">
+<a href="Layout.html#about" class="w3-button w3-block w3-black">ABOUT</a>
+</div>
+<div class="w3-col s3">
+<a href="Layout.html#galeri" class="w3-button w3-block w3-black">GALERI</a>
+</div>
+<div class="w3-col s3">
+<a href="Video-Youtube.html" class="w3-button w3-block w3-black">REFERENSI</a>
+</div>
+</div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+</div>
+<div class="w3-display-middle w3-center">
+<span class="w3-text-white" style="font-size:90px">Inspirasi Outfit of the Day<br>Aesthetic!</span>
+</div>
+<div class="w3-display-bottomright w3-center w3-padding-large">
+</div>
+</header>
+</div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+<div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REFERENSI</span></h5>
+</div>
+
+<details>
+    <summary>
+        <br><br><center><p><span class="w3-tag">OOTD PHOTO POSE INSPIRATION</span><br></center>
+    </summary>
+<center><video controls>
+    <source src = "PoseOOTD.mp4" type="video/mp4"/>
+    Browsermu tidak mendukung tag ini, upgrade dong!
+</video></center>
+</details>
+</div>
+
+<center><button onclick="goBack()" class="w3-button w3-block w3-black">BACK</button></center>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+<center><a href="Videogif.html" class="w3-button w3-block w3-black">KELUAR</a></center>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+<p>Copyright Syahrina Dini Caesara💖</p>
+</footer>
+
+</body>
+</html>
