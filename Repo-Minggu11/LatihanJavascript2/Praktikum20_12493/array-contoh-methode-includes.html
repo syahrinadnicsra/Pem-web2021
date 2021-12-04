@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Array-contoh-method-includes</title>
+    </head>
+
+    <body>
+        <script>
+            // Method Includes
+            var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+            
+            // Apakah Kacang Sudah Ada di Dalam Array Tanaman?
+            var adaKacang = tanaman.includes("Kacang");
+            console.log(adaKacang); // -> true
+            
+            // Apakah Bayam Ada?
+            var adaBayam = tanaman.includes("Bayam");
+            console.log(adaBayam); // -> false
+            
+            // Menampilkan Isi Array
+           document.write(tanaman);
+
+        </script>
+    </body>
+</html>
